@@ -656,7 +656,7 @@ cout << endl;
 		return 0;
 	}
 	yyin = fopen(argv[1], "r");
-	outlog.open("21201087_log.txt", ios::trunc);
+	outlog.open("21201451_log.txt", ios::trunc);
 	
 	if(yyin == NULL)
 	{
@@ -679,4 +679,5 @@ cout << endl;
 	fclose(yyin);
 	
 	return 0;
+
 }
