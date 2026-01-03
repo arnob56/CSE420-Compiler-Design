@@ -6,6 +6,7 @@
 
 #define YYSTYPE symbol_info*
 
+/* Include the parser header */
 #include "y.tab.h"
 
 extern YYSTYPE yylval;
@@ -98,3 +99,4 @@ printf      { return PRINTLN; }
                 yylval = (YYSTYPE)s;
                 return CONST_FLOAT;
             }
+%%
